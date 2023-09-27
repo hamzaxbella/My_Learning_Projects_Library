@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="hero">
+        <img id="parallax-img" src="img/hero.jpg" alt="">
+        <h2 class="title">parallax effect</h2>
+    </section>
+    <section class="text">
+        <h2>Parallax effect</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem reiciendis voluptatibus nobis laudantium expedita vero earum quaerat commodi et sunt, quia explicabo necessitatibus animi rem sapiente at numquam quis veniam dicta soluta nam, itaque tempore! Numquam, temporibus ea? Saepe voluptate quasi tempore tempora quo praesentium alias autem quaerat eligendi, exercitationem velit rerum id? Non et ipsum tempore ipsam dolor deleniti ad laboriosam nemo eveniet, doloribus, qui autem praesentium exercitationem error. Voluptatum neque aperiam soluta fugit inventore aut magni amet ratione ea, a sequi, blanditiis in? Amet, fugiat? Ratione eum corporis, aliquid, officia aperiam dolores est excepturi ab consequuntur maiores doloribus esse ipsa ut quod quidem quaerat obcaecati iusto aspernatur. Aut quas nam sunt nostrum eos perspiciatisLorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem reiciendis voluptatibus nobis laudantium expedita vero earum quaerat commodi et sunt, quia explicabo necessitatibus animi rem sapiente at numquam quis veniam dicta soluta nam, itaque tempore! Numquam, temporibus ea? Saepe voluptate quasi tempore tempora quo praesentium alias autem quaerat eligendi, exercitationem velit rerum id? Non et ipsum tempore ipsam dolor deleniti ad laboriosam nemo eveniet, doloribus, qui autem praesentium exercitationem error. Voluptatum neque aperiam soluta fugit inventore aut magni amet ratione ea, a sequi, blanditiis in? Amet, fugiat? Ratione eum corporis, aliquid, officia aperiam dolores est excepturi ab consequuntur maiores doloribus esse ipsa ut quod quidem quaerat obcaecati iusto aspernatur. Aut quas nam sunt nostrum eos perspiciatis rerum dolore aspernatur repellendus?</p>
+    </section>
+    <script>
+        const parallaxImg = document.querySelector('#parallax-img');
+
+        window.addEventListener('scroll',function(){
+            let value = window.scrollY;
+            console.log(value);
+            parallaxImg.style.top = value * .5 + 'px';
+        })
+    </script>
+</body>
+</html>

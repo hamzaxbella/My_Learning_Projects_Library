@@ -1,0 +1,36 @@
+*,::before,::after{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    -webkit-box-sizing: border-box;
+}
+/* VARIABLES */
+/* z-index */
+:root {
+    --z-back: -10;
+    --z-normal: 1;
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 1000; }
+  /* list */
+ul{
+    display: flex;
+}
+li{
+    list-style-type: none;
+}   
+a{
+    text-decoration: none;
+}
+/* COMPONENTS */
+/* button */
+.btn{
+    padding:1.5rem 3rem;
+    outline:none;
+    border:none;
+}
+/* imgs */
+img{
+    max-width: 100%;
+    height:auto;
+}

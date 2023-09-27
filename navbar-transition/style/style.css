@@ -1,0 +1,97 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.nav-wakeup{
+    background-color: #384734;
+    box-shadow: 0px 6px 13px 1px #c9c9c9;
+}
+/* styling the navbar */
+.navbar{
+    left: 0;
+    top:0;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 30px;
+    transition:all ease .3s;
+    z-index: 100;
+
+}
+.links{
+    display:flex;
+    flex: 0 0 60%;
+}
+.links li{
+    margin-left: 50px;
+    list-style-type: none;
+    position:relative;
+}
+.links li a::after {
+    content:'';
+    position:absolute;
+    bottom:-20%;
+    left:0;
+    width:0%;height:2px;
+    background:#fff;
+    transition:width .3s ease;
+    
+}
+.links li:hover  a::after{
+    width:95%;
+}
+.links li a{
+    font-size: 20px;
+    color: white;
+    text-decoration:none;
+}
+.navbar button{
+    width:80px;
+    padding: 10px 0;
+    border-radius: 30px;
+    border:1px solid rgb(206, 206, 206); 
+    background: transparent;
+    color: white;
+    transition:all .3s ease;
+    cursor: pointer;
+}
+.navbar button:hover{
+    background:#fff;
+    color:black;
+    border: 1px solid transparent;
+}
+/* navbar end */
+
+/* styling hero section */
+#hero{
+    height:100vh;
+    background:url(../images/computer_anime.jpg);
+    background-size:cover;
+    background-position:center;
+}
+#hero .text{
+    position:absolute;
+    left:20%;
+    top: 50%;
+    transform:translateY(-30%);
+}
+#hero .text .text-1,.text{
+    color:white;
+}
+#hero .text .text-1{
+    font-size:70px;
+}
+#hero .text .text-2{
+    font-size:30px;
+}
+/* hero end */
+
+/* pesudo section starts */
+.psuedo{
+    padding:100px 20%;
+    line-height:40px;
+    text-align:center;
+}

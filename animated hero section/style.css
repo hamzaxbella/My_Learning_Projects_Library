@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Coda+Caption&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-family:'Monserrat';
+    overflow:hidden;
+    font-size:12px;
+    width:100%;
+    height:100vh;
+}
+ul{
+    list-style-type: none;
+}
+.right,.left{
+    position:absolute;
+    width:50%;
+    height:100%;
+    z-index:-1;
+}
+.left{
+    background: #b3b4af;
+    left:0%;
+    width:0%;
+}
+.right{
+    background:#191921;
+    right:0%;
+    width:100%;
+}
+.nav ul{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    height:80px;
+    padding:0 20px;
+    margin: 0 30px;
+    
+}
+.nav ul li{
+    display:inline-block;
+    color:#fff;
+    text-transform:uppercase;
+    letter-spacing:3px;
+    font-size:12px;
+    font-weight:600;
+    padding:0 30px;
+}
+.nav .logo{
+    flex:0 0 10%;
+    font-size:18px;
+    letter-spacing:0;
+}
+.nav .menu{
+    flex:0 0 10%;
+    font-size:18px;
+}
+.nav .collection{
+    flex: 0 0 10%;
+}
+
+.nav .explore{
+    flex: 0 0 40%;
+}
+.nav .search{
+    flex:0 0 30%;
+}
+.nav .profile{
+    flex:0;
+}
+.nav .profile .img{
+    background-image:url(images/lux.jpg);
+    background-position:50%;
+    background-size:cover;
+    height:50px;
+    width:50px;
+    border-radius:50%;
+}
+.img-wrapper{
+    position:absolute;
+    bottom:0;
+    left:180px;
+}
+.img-wrapper .ramin{
+    background-image: url(images/ramin.jpg);
+    background-size:cover;
+    height:550px;
+}
+.info{
+    position:absolute;
+    bottom:0;
+    left:180px;
+    background:rgba(0, 0, 0, .8);
+    padding:0 10px;
+}
+.info ul li{
+    display:inline-block;
+    padding:20px 25px; 
+    color:#fff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size:10px;
+    font-weight:300;
+    font-family: sans-serif;
+}
+.info i{
+    font-size:18px;
+}
+.text{
+    position:absolute;
+    top:50%;
+    right: 372px;
+    transform:translateY(-50%);
+}
+.text h1{
+    font-size:90px;
+    color:#fff;
+    font-family: 'Coda Caption', sans-serif;
+    text-transform: uppercase;
+}
+.text p{
+    font-size:20px;
+    color:#fff;
+    font-family: monospace;
+    margin-left:10px;
+}
+.name{
+    position:absolute;
+    top:50%;
+    left:-100px;
+    transform:translateY(-50%);
+    font-size:90px;
+    font-family: 'Coda Caption', sans-serif;
+    text-transform: uppercase;
+    color:transparent;
+    -webkit-text-stroke:2px #fff;
+
+}
+.bottomnav{
+    position:absolute;
+    bottom:100px;
+    right:300px; 
+}
+.bottomnav ul li{
+    color:#fff;
+    text-transform:uppercase;
+    letter-spacing:15px;
+    margin-top:20px;
+    font-family:sans-serif;
+}
+.bottomnav ul li:nth-of-type(2)::before{
+    content:'';
+    position:absolute;
+    left:-45px;
+    top:50%;
+    transform:translateY(-50%);
+    height:2px; 
+    width:30px;
+    background-color:  #b3b4af;
+}

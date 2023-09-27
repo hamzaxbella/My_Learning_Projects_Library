@@ -1,0 +1,135 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'poppins' ,sans-serif;
+}
+:root{
+    --background-white :#f2f2f2;
+    --pink:#ff676d;
+}
+body{
+    background-color: #ff676d; 
+    min-height:100vh;
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:var(--background-white);
+    .container{
+        max-width:950px;
+        width:100%;
+        overflow-x:hidden;
+        .min-card{
+            width:200%;
+            display: flex;
+            justify-content: space-evenly;
+            transition:all .5s ease;
+            .cards{
+                display: flex;
+                justify-content: space-between;
+                width:calc(100% / 2 - 10px);
+                .card{
+                    background:#fff;
+                    padding: 50px 0;
+                    width:calc(100% / 3 - 10px);
+                    border-radius:6px;
+                    box-shadow: 0 0 15px lightgray;
+                }
+                .card .content{
+                    display:flex;
+                    flex-direction:column;
+                    justify-content:center;
+                    align-items:center;
+                    text-align:center;
+                }
+                 .card .content .img{
+                    height:130px;width:130px;
+                    background:var(--pink);
+                    border-radius: 50%;
+                    padding: 3px;
+        
+                    .image {
+                        width:100%;height:100%;
+                        object-fit:cover;
+                        border-radius: 50%;
+                        background:#fff;
+                        padding:3px;
+                    }
+                }
+                .card .content .details .name{
+                    font-size:20px;
+                    font-weight: 500;
+                    margin: 10px;
+                }
+                .card .content .details .poffession{
+                    font-size:20px;
+                    color:var(--pink);
+                    margin-bottom: 10px;
+                }  
+                .card .content .media-icons{
+                    display: flex;
+                }
+                .card .content .media-icons a{
+                    height:35px;
+                    width:35px;
+                    background:var(--pink);
+                    margin: 0 4px;
+                    border-radius:50%;
+                    text-align:center;
+                    line-height:33px;
+                    font-size:14px;
+                    border:2px solid transparent;
+                    transition:all .5s ease;
+                    color:#f2f2f2;
+                }
+                .card .content .media-icons a:hover{
+                    background:transparent;
+                    color:var(--pink);
+                    border:2px solid var(--pink);
+                }    
+        }
+        
+        } 
+        #two:checked ~ .min-card{
+            margin-left: -100%;
+        }
+
+        .button{
+            display:flex;
+            margin:20px;
+            justify-content: center;
+            justify-content: center;
+        }
+        .button label{
+            height:15px;  
+            width:15px;
+            background:var(--pink);
+            border-radius: 20px;
+            margin: 0 3px;
+            cursor: pointer;
+            transition:all 0.5s ease;
+        }
+        .button label.active{
+            width: 30px;
+            background:var(--pink);
+        }
+        #one:checked ~ .button label.one{
+            width: 30px;
+        }
+        #two:checked ~ .button label.two{
+            width: 30px;
+        }
+        #one:checked ~ .button label.two{
+            width:15px;
+        }
+        #two:checked ~ .button label.one{
+            width:15px;
+        }
+    }
+
+}
+
+
+    
+

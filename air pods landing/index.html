@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>AirPods pro</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <a href="#" class="nav__logo">AirPods</a>
+            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#" class="nav__link">Desciption</a></li>
+                    <li class="nav__item"><a href="#l-section" class="nav__link">Specifications</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__actions">
+                <div class="nav__toggle" id="nav-toggle">
+                    <img src="assets/icons/bx-chevron-down.svg" alt="">
+                </div>
+                <a href="#" class="nav__btn">Compare</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HOME -->
+    <main class="l-main bd-grid">
+        <section class="home">
+            <div class="home__data">
+                <h1 class="home__title">AirPods</h1>
+                <p class="home__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br> <!--GSAP--> reprehenderit?</p>
+            </div>
+
+            <div class="home__img">
+                <img src="assets/img/airpod1.png" alt="" class="airpod1">
+                <img src="assets/img/airpod2.png" alt="" class="airpod2">
+            </div>
+
+            <div class="home__scroll">
+                <span class="home__scroll-text">Scroll down for more</span>
+                <a href="#l-section"><img src="assets/icons/bx-mouse.svg" alt=""></a>
+            </div>
+        </section>
+
+        <!-- ABOUT AIRPODS -->
+        <section class="l-section" id="l-section">
+            <div class="details">
+                <div class="details__content">
+                    <div class="details__box">
+                        <span class="details__initial">Mass of</span>
+                        <h3 class="details__title">25<span> h</span></h3>
+                        <p class="details__description">A batterie <br>Against water</p>
+                    </div>
+                    <div class="details__box">
+                        <span class="details__initial">Hasta</span>
+                        <h3 class="details__title">5<span> h</span></h3>
+                        <p class="details__description">A battery <br>Against fire</p>
+                    </div>
+                    <div class="details__box">
+                        <span class="details__initial">Solo</span>
+                        <h3 class="details__title">15<span> min</span></h3>
+                        <p class="details__description">Lorem, ipsum dolor. <br>Against fire<br>Lorem.</p>
+                    </div>
+                </div>
+
+                <div class="details__img">
+                    <img src="assets/img/airpods.png" alt="" class="airpods">
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- ===== SCRIPTS ===== -->
+        <!-- GSAP -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+        <!-- Logic -->
+        <script src="assets/logic/logic.js"></script>
+</body>
+</html>

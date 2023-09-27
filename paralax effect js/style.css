@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;300;400;500;600;700&family=Patrick+Hand&family=Poppins:wght@300;400;500;600&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+.hero{
+    width: 100%;
+    height:100vh;
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+    font-size:3em;
+    font-family: 'Patrick Hand', cursive;
+    letter-spacing: 4px;
+    font-style:italic;
+}
+#parallax-img{
+    position: absolute;
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+.hero h2{
+    position: absolute;
+    z-index: 2;
+}
+.hero::after{
+    content:'';
+    position:absolute;
+    left:0;
+    top:0;
+    background:#000;
+    opacity: .2;
+    width:100%;
+    height:100%;
+    z-index: 1;
+}
+.hero::before{
+    content:'';
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:100%;
+    height:100px;
+    background-image:linear-gradient(to top, #334150 ,transparent );
+    z-index: 10;
+}
+
+.text{
+    position: relative;
+    background: #334150;
+    font-size: 18;
+    padding:50px 100px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    line-height:30px;
+}
+.text h2{
+    font-size:2em;
+    margin-bottom:30px;
+}

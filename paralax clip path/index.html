@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h3>Scroll down</h3>
+    <h2 class="outer-text">Don't be boring!</h2>
+
+    <section>
+        <h2 class="inner-text">Don't be boring!</h2>
+    </section>
+    <div class="container">
+        <h2>Paralax clip path effect</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia magnam architecto doloribus consequatur nulla? Sapiente quam ipsa aperiam? Voluptate, necessitatibus asperiores! Tenetur nam fugit incidunt esse ut voluptatibus, eaque quas. Obcaecati alias iusto beatae, repudiandae voluptatem ad possimus voluptas deleniti nulla at ea nesciunt, totam, magni nisi distinctio ab sit veritatis modi doloribus perspiciatis qui assumenda? Alias delectus natus earum ipsum ipsa aspernatur tenetur obcaecati beatae, ab fuga quidem, impedit sequi distinctio voluptatibus cumque repellendus magni assumenda. Molestiae, cumque. Nobis voluptas accusantium illum dolorem perferendis qui distinctio facilis in dolores quibusdam explicabo, odio cupiditate pariatur impedit similique labore rem itaque, deserunt enim possimus, repellat voluptatibus maxime aspernatur. Sint amet laboriosam, ut iure ducimus enim excepturi aliquid voluptatum laudantium ab sit similique quam et quibusdam nesciunt error praesentium deleniti debitis dolor voluptate quo aut placeat harum tempora. Repellendus, at quod cumque possimus ratione cum voluptatibus odio similique sunt beatae rerum laboriosam sit dolor ex exercitationem, itaque numquam quidem accusantium officiis. Accusamus.<!--  --></p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia magnam architecto doloribus consequatur nulla? Sapiente quam ipsa aperiam? Voluptate, necessitatibus asperiores! Tenetur nam fugit incidunt esse ut voluptatibus, eaque quas. Obcaecati alias iusto beatae, repudiandae voluptatem ad possimus voluptas deleniti nulla at ea nesciunt, totam, magni nisi distinctio ab sit veritatis modi doloribus perspiciatis qui assumenda? Alias delectus natus earum ipsum ipsa aspernatur tenetur obcaecati beatae, ab fuga quidem, impedit sequi distinctio voluptatibus cumque repellendus magni assumenda. Molestiae, cumque. Nobis voluptas accusantium illum dolorem perferendis qui distinctio facilis in dolores quibusdam explicabo, odio cupiditate pariatur impedit similique labore rem itaque, deserunt enim possimus, repellat voluptatibus maxime aspernatur. Sint amet laboriosam, ut iure ducimus enim excepturi aliquid voluptatum laudantium ab sit similique quam et quibusdam nesciunt error praesentium deleniti debitis dolor voluptate quo aut placeat harum tempora. Repellendus, at quod cumque possimus ratione cum voluptatibus odio similique sunt beatae rerum laboriosam sit dolor ex exercitationem, itaque numquam quidem accusantium officiis. Accusamus.<!--  --></p>
+    </div>
+</body>
+<script>
+    let section = document.querySelector('section');
+    let outer_text = document.querySelector('.outer-text');
+    let inner_text = document.querySelector('.inner-text');
+    window.addEventListener('scroll',function(){
+        let value = window.scrollY;
+
+        section.style.clipPath = `circle( ${value}px at center center)`;
+
+        outer_text.style.left = 100 - value * .25 + '%';
+        inner_text.style.left = 100 - value * .25 + '%';
+
+    })
+</script>
+</html>
